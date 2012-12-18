@@ -1,1 +1,1 @@
-require("lib/event_store.js")
+module.exports = require("./lib/event_store");

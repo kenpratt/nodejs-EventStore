@@ -9,7 +9,7 @@ It has HTTP and TCP client interfaces -- this project implements the TCP interfa
 Project status
 --------------
 
-_Very_ early stage. Only a subset of the TCP API is implemented. *But* you can create streams of events and read them back, so the most important functionality is in there!
+_Very_ early stage. Only a subset of the TCP API is implemented. But you can create streams of events and read them back, so the most important functionality is in!
 
 
 Usage
@@ -17,7 +17,7 @@ Usage
 
 Installing:
 
-    npm install https://github.com/kenpratt/nodejs-EventStore
+    npm install git://github.com/kenpratt/nodejs-EventStore.git
 
 
 Connecting:
