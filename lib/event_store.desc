@@ -1,0 +1,167 @@
+
+¿
+lib/event_store.protoEventStore.Client.Messages"~
+EventLinkPair6
+event (2'.EventStore.Client.Messages.EventRecord5
+link (2'.EventStore.Client.Messages.EventRecord"d
+ClientEvent
+event_id (
+
+event_type (	
+is_json (
+data (
+metadata ("Ç
+EventRecord
+event_stream_id (	
+event_number (
+event_id (
+
+event_type (	
+data (
+metadata ("É
+DeniedToRoute
+external_tcp_address (	
+external_tcp_port (
+external_http_address (	
+external_http_port ("~
+CreateStream
+event_stream_id (	
+create_stream_id (
+metadata (
+allow_forwarding (
+is_json ("S
+CreateStreamCompleted
+event_stream_id (	
+
+error_code (
+error (	"ì
+WriteEvents
+event_stream_id (	
+expected_version (7
+events (2'.EventStore.Client.Messages.ClientEvent
+allow_forwarding ("h
+WriteEventsCompleted
+event_stream_id (	
+
+error_code (
+error (	
+event_number ("[
+DeleteStream
+event_stream_id (	
+expected_version (
+allow_forwarding ("S
+DeleteStreamCompleted
+event_stream_id (	
+
+error_code (
+error (	"T
+	ReadEvent
+event_stream_id (	
+event_number (
+resolve_link_tos ("ù
+ReadEventCompleted
+event_stream_id (	
+event_number (
+result (
+
+event_type (	
+data (
+metadata (
+log_position ("t
+ReadStreamEventsForward
+event_stream_id (	
+start_index (
+	max_count (
+resolve_link_tos ("Ù
+ ReadStreamEventsForwardCompleted
+event_stream_id (	9
+events (2).EventStore.Client.Messages.EventLinkPair
+result (
+next_event_number (
+last_event_number (
+is_end_of_stream (
+last_commit_position ("u
+ReadStreamEventsBackward
+event_stream_id (	
+start_index (
+	max_count (
+resolve_link_tos ("ı
+!ReadStreamEventsBackwardCompleted
+event_stream_id (	9
+events (2).EventStore.Client.Messages.EventLinkPair
+result (
+next_event_number (
+last_event_number (
+is_end_of_stream (
+last_commit_position ("v
+ReadAllEventsForward
+commit_position (
+prepare_position (
+	max_count (
+resolve_link_tos (" 
+ReadAllEventsForwardCompleted
+commit_position (
+prepare_position (9
+events (2).EventStore.Client.Messages.EventLinkPair
+next_commit_position (
+next_prepare_position ("w
+ReadAllEventsBackward
+commit_position (
+prepare_position (
+	max_count (
+resolve_link_tos ("À
+ReadAllEventsBackwardCompleted
+commit_position (
+prepare_position (9
+events (2).EventStore.Client.Messages.EventLinkPair
+next_commit_position (
+next_prepare_position ("_
+TransactionStart
+event_stream_id (	
+expected_version (
+allow_forwarding ("o
+TransactionStartCompleted
+transaction_id (
+event_stream_id (	
+
+error_code (
+error (	"ñ
+TransactionWrite
+transaction_id (
+event_stream_id (	7
+events (2'.EventStore.Client.Messages.ClientEvent
+allow_forwarding ("o
+TransactionWriteCompleted
+transaction_id (
+event_stream_id (	
+
+error_code (
+error (	"^
+TransactionCommit
+transaction_id (
+event_stream_id (	
+allow_forwarding ("W
+TransactionCommitCompleted
+transaction_id (
+
+error_code (
+error (	",
+SubscribeToStream
+event_stream_id (	"0
+UnsubscribeFromStream
+event_stream_id (	"
+SubscribeToAllStreams"
+UnsubscribeFromAllStreams"Ω
+StreamEventAppeared
+event_stream_id (	
+event_number (
+event_id (
+
+event_type (	
+data (
+metadata (
+commit_position (
+prepare_position (".
+SubscriptionDropped
+event_stream_id (	"
+SubscriptionToAllDropped
